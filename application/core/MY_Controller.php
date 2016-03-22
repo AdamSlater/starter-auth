@@ -33,7 +33,7 @@ class Application extends CI_Controller {
 	 */
 	function render()
 	{
-		$mychoices = array('menudata' => $this->makemenu());
+		$mychoices = $this->config->item('menu_choices');
 		$this->data['menubar'] = $this->parser->parse('_menubar', $mychoices, true);
 		$this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
 
