@@ -25,7 +25,8 @@ if (!defined('APPPATH'))
                 <div class="navbar-inner">
                     <a class="brand" href="/"><img src="/assets/images/logo.png"/></a>
                     {menubar}
-		</div>
+                    <div style="padding-top: 10px">{username}</div>
+		        </div>
             </div>           
             <div id="content">
                 
